@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+    , initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class = "welcome-card" id= "sign-up-card">
+    <h2>Sign Up Page</h2>
+    <form class= "sign-up-form" action="success.html">
+      <div class = "form-container">
+        <div class = "form-group">
+          <label for="lastname"><b>Last Name</b></label>
+          <input
+            class = "text-input"
+            name = "lastname"
+            type = "text"
+            placeholder = "Last Name / Surname"
+            required
+          />
+        </div>
+        <div class = "form-group">
+          <label for="firstname"><b>First Name</b></label>
+          <input
+            class = "text-input"
+            name = "firstname"
+            type = "text"
+            placeholder = "First Name"
+            required
+          />
+        </div>
+        <div class = "form-group">
+          <label for="email"><b>Email</b></label>
+          <input 
+            class = "text-input"
+            type="email"
+            pattern = "[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+            placeholder="Enter Email" 
+            name="email" 
+            required
+            />
+        </div>
+        <div class = "form-group">
+          <label for="phone"><b>Enter a phone number:</b></label>
+          <input 
+            class = "text-input"
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="090X XXX XXXX" pattern="0[0-9]{3}[0-9]{3}[0-9]{4}">
+        </div>
+        <div class = "form-group" id = "bio-div">
+          <div>
+            <label for="gender"><b> Select your gender</b></label>
+            <select name="gender" >
+            	<option value="none" selected>Gender</option>
+            	<option value="male">Male</option>
+            	<option value="female">Female</option>
+            	<option value="other">other</option>
+            </select>
+          </div>
+          <div>
+            <label for="birthday"><b>Date of Birth</b>:</label>
+            <input type="date" id="birthday" name="birthday" required>
+          </div>
+        </div>
+        <div class = "form-group">
+          <label for="favcolor"><b>Select your favorite color: </b></label>
+          <input 
+            type="color" 
+            id="favcolor" 
+            name="favcolor" 
+            value="#ff0000">
+        </div>
+        <input type = "submit" value = "Sign Up" class = "sign-up-btn" />
+      </div> 
+      <p><a href="signIn.html">Already have an account? Sign In</a></p>
+    </form>
+  </div>
+</body>
+</html>
