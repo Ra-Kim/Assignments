@@ -1,0 +1,165 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Lexend Deca", "Big Shoulders Display" , "sans-serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #10aeff;
+  cursor: pointer;
+}
+
+.container {
+  width: 72%;
+  height: 75%;
+  margin-top: 1%;
+  border-radius: 10px;
+  background: hsl(0, 0%, 95%);
+  display: flex;
+}
+
+.content-div {
+  width: 33.33%;
+  padding: 0 5%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.car-circle {
+  height: 30px;
+  width: 30px;
+  background: black;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Big Shoulders Display" , "sans-serif";
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+#first-div {
+  background: hsl(31, 77%, 52%);
+  border-radius: 12px 0 0 12px;
+}
+
+#first-div .button-div {
+  color: hsl(31, 77%, 52%);
+}
+
+#first-div .button-div:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+#second-div {
+  background: hsl(184, 100%, 22%);
+}
+
+#second-div .button-div {
+  color: hsl(184, 100%, 22%);
+}
+
+#second-div .button-div:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+
+#third-div {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 12px 12px 0;
+}
+
+#third-div .button-div {
+  color: hsl(179, 100%, 13%);
+}
+
+#third-div .button-div:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+
+.button-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  background:hsl(0, 0%, 95%);
+  border-radius: 25px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.button-div:hover{
+  background: inherit;
+  padding: 13px 19px;
+  border: 1.5px solid hsl(0, 0%, 95%);
+}
+
+.grid-body {
+  background: #1C2333;
+}
+
+.grid-body .container {
+  height:80%;
+  width: 700px;
+  display: grid;
+  background: transparent;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+}
+
+.top {
+  display:grid;
+  grid-template-columns: 65% 35%;
+  gap: 10px;
+}
+
+.top > div {
+  height: 100%;
+}
+
+.top-left {
+  background: #fc5203;
+}
+
+.top-right{
+  background: #fcba03;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 10px;
+}
+
+.bottom-left{
+  background: #20821d;
+}
+
+.bottom-right {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 46% 50%;
+}
+
+.bottom-right-child {
+  width: 100%;
+  background: #22a9e3;
+  
+}
